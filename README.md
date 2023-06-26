@@ -1,5 +1,4 @@
 # Another-Earth
-Unity 2D game
 An immersive 2D sci-fi Unity game that has a fun and dark storyline with creative characters woven into the paradoxical plot.
 
 We developed this game for the sci-fi enthusiasts who wanted more out of the 2D genre. It's a mix of cosmic horror, funny characters and conversations, and an epic soundtrack to set the mood for players.
