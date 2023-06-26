@@ -7,11 +7,10 @@ Since it was a game developed on Unity, we ran into some errors while coding the
 
 Techstacks:
 
-Unity 
-C# 
-Pyxel 
-Edit 
-DaVinci Resolve
+Unity <br/>
+C# <br>
+Pyxel Edit <br/>
+DaVinci Resolve <br/>
 
 "Another Earth" is an immersive 2D sci-fi cosmic game that takes players on a captivating journey through a mysterious planet. In this game, players step into the shoes of a character who finds themselves guided by enigmatic creatures and tasked with solving intriguing yet enjoyable puzzles. The game's unique selling point lies in its paradoxical theme, where players are compelled to replay it to explore different choices and witness how the story unfolds.
 
