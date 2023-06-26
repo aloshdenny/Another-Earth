@@ -5,7 +5,8 @@ We developed this game for the sci-fi enthusiasts who wanted more out of the 2D 
 
 Since it was a game developed on Unity, we ran into some errors while coding the character attributes and importing certain libraries, audio and video files. But we fixed those bugs and we are happy to announce that the game is ready-to-play on Itch.io (links below)
 
-Techstacks: 
+Techstacks:
+
 Unity 
 C# 
 Pyxel 
