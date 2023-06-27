@@ -19,5 +19,5 @@ With a focus on delivering an exceptional player experience, "Another Earth" boa
 
 Albeit the game's linear storyline, that would be boring. So to add an extra layer of innovation to incentivize players into exploring replayability of the game, we added multiple endings that the player can explore through subsequent runs. As to how many endings there are, that's for the players to discover. We also dropped some not-so-obvious easter eggs along the way, which we hope only the most true gamers will find.
 
-Play Another Earth here: [Another Earth](https://a-o-x-o.itch.io/another-earth)
+Play Another Earth here: [Another Earth](https://a-o-x-o.itch.io/another-earth) <br/>
 You can also download the game here [Another Earth](https://github.com/aloshdenny/Another-Earth/blob/main/AnotherEarth.zip)
