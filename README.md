@@ -1,4 +1,4 @@
-![Screenshot (553)](https://github.com/aloshdenny/Another-Earth/assets/97750960/3d6b8faa-ca97-46e3-bf54-a48ae75fddad)# Another Earth
+# Another Earth
 An immersive 2D sci-fi Unity game that has a fun and dark storyline with creative characters woven into the paradoxical plot.
 
 We developed this game for the sci-fi enthusiasts who wanted more out of the 2D genre. It's a mix of cosmic horror, funny characters and conversations, and an epic soundtrack to set the mood for players.
@@ -25,9 +25,8 @@ You can also download the game here: [Another Earth](https://github.com/aloshden
 ## Shots of the game
 ![Screenshot (552)](https://github.com/aloshdenny/Another-Earth/assets/97750960/32be7134-b9d4-4be0-8600-3d3bd92f6ced)
 ![Screenshot (551)](https://github.com/aloshdenny/Another-Earth/assets/97750960/1b31e2c3-d923-4aaa-998d-67a2605691b8)
-
 ![Screenshot (564)](https://github.com/aloshdenny/Another-Earth/assets/97750960/5d4216bf-785c-454f-bed1-5a6ef64f8ad4)
-
+![Screenshot (553)](https://github.com/aloshdenny/Another-Earth/assets/97750960/3d6b8faa-ca97-46e3-bf54-a48ae75fddad)
 ![Screenshot (569)](https://github.com/aloshdenny/Another-Earth/assets/97750960/5c079fbd-e4cc-452f-9ef1-30cdb873d88b)
 ![Screenshot (565)](https://github.com/aloshdenny/Another-Earth/assets/97750960/1e59caaf-5961-4081-9351-d7190add14a3)
 
