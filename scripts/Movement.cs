@@ -64,12 +64,10 @@ public class Movement : MonoBehaviour
                 {
 
                     Moving.PlayOneShot(walk);
-                    print("playWalk");
                     if (speed == walkspeed)
                     {
                         StartCoroutine(AudioPlay(true));
                         
-                        print("sound");
                     }
                     else
                     {

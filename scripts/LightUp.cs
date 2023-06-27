@@ -24,7 +24,6 @@ public class LightUp : MonoBehaviour
         if (lightsOn == 4 && lightsOff == 5)
         {
             door.SetActive(false);
-            PlayAudio.DoorPlay = true;
             JawaTalk.doorOpen = true;
         }
         else { 

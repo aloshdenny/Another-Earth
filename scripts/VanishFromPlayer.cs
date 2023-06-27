@@ -24,7 +24,6 @@ public class VanishFromPlayer : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("detected");
         if (collision.name == "Player") { 
             gameObject.SetActive(false);
         }

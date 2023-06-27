@@ -33,8 +33,7 @@ public class SpaceShipDeposit : MonoBehaviour
     {
         //StartCoroutine(Credits());
         //ONLY FOR TESTING
-
-        //resetGame();
+       
         //PlayerPrefs.SetInt("GameStart", 1);
         //TILL HERE
         PlayerPrefs.GetInt("Pickaxe", 0);
@@ -140,7 +139,6 @@ public class SpaceShipDeposit : MonoBehaviour
             gameReset= false;
         }
         if (daddyiumGot) {
-            print("Got red crystal");
             PlayerImg.SetActive(true);
             daddyiumGot= false;
         }
@@ -213,7 +211,7 @@ public class SpaceShipDeposit : MonoBehaviour
         {
             StartCoroutine(PutInSpaceShip());
         }
-        if (PlayerPrefs.GetInt("Daddyium", 0) == 1 && choice != 'Z') {
+        if (PlayerPrefs.GetInt("Daddyium", 0) == 1 && choice == 'Z') {
             SwitchCamera.Entered = 4;
         }
 
@@ -320,7 +318,8 @@ public class SpaceShipDeposit : MonoBehaviour
         } 
     }
 
-    IEnumerator WaterfallEntry() { 
+    IEnumerator WaterfallEntry() {
+        print("not entererd");
         Movement.playerStationary1= true;
         prompt.SetActive(true);
         promptText.text = "Rebuilt SpaceShip";
@@ -512,6 +511,8 @@ public class SpaceShipDeposit : MonoBehaviour
         }
 
         finalChoice = true;
+
+
         promptWait = true;
         yield return new WaitForSeconds(1);
         yield return new WaitUntil(() => promptWaitDone == true);
@@ -542,7 +543,7 @@ public class SpaceShipDeposit : MonoBehaviour
             StartCoroutine(Credits());
             // credits
         }
-        if (choice == 'X')
+        else if (choice == 'X')
         {
             blackScreen.SetActive(true);
             promptText.text = "You stay with the boss and ended up becoming the new infected boss in Capsid";

@@ -19,7 +19,6 @@ public class RockMove : MonoBehaviour
         {
             open.SetActive(true);
             close.SetActive(false);
-            PlayAudio.DoorPlay = true;
         }
         else
         {

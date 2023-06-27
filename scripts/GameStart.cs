@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class GameStart : MonoBehaviour
 {
     public static bool gameStart = false;
-    public GameObject hud,video,startScreen,controlScreen,player;
+    public GameObject hud,video,startScreen,controlScreen,player,blackScreen;
     public float time=48;
     public Text objective;
     //public VideoPlayer vidP;
@@ -26,6 +26,7 @@ public class GameStart : MonoBehaviour
     void Start()
     {
         PlayerPrefs.GetInt("GameStart",0);
+        PlayerPrefs.GetInt("PlayedIntro",0);
         startScreen.SetActive(true);
         Movement.playerStationary1 = true;
 
@@ -54,8 +55,10 @@ public class GameStart : MonoBehaviour
     }
     public void Play() {
         PlayAudio.buttonPlay = true;
-        if (PlayerPrefs.GetInt("GameStart", 0) == 0)
+        blackScreen.SetActive(true);
+        if (PlayerPrefs.GetInt("GameStart", 0) == 0|| PlayerPrefs.GetInt("PlayedIntro", 0) == 0)
         {
+            SpaceShipDeposit.gameReset = true;
             intro.SetActive(true);
             StartCoroutine(waitForVideo());
         }
@@ -65,7 +68,7 @@ public class GameStart : MonoBehaviour
             prompt.SetActive(false);
             Movement.playerStationary1 = false;
             hud.SetActive(true);
-            
+            blackScreen.SetActive(false);
         }
         startScreen.SetActive(false);
         ambient.PlayOneShot(ambience);
@@ -82,6 +85,7 @@ public class GameStart : MonoBehaviour
         SpaceShipDeposit.gameReset=true;
         PlayerPrefs.SetInt("GameStart", 0);
         Play();
+        PlayerPrefs.SetInt("PlayedIntro", 0);
     }
     public void quit() {
         PlayAudio.buttonPlay = true;
@@ -89,11 +93,13 @@ public class GameStart : MonoBehaviour
         Time.timeScale = 1;
         Application.Quit();
     }
-    
+
     IEnumerator waitForVideo() {
         yield return new WaitForSeconds(time);
+        blackScreen.SetActive(false);
         intro.SetActive(false);
         PlayerPrefs.SetInt("GameStart", 1);
+        PlayerPrefs.SetInt("PlayedIntro", 1);
         player.transform.position= Vector3.zero;
         
         prompt.SetActive(true);

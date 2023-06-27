@@ -66,7 +66,7 @@ public class LavaDemonMove : MonoBehaviour
             rb.velocity = Vector2.zero;
         }
         //float dist=Mathf.Sqrt()
-        if (!outOfRange && !reachedPlayer&& !PlayerAttack.attacking&&!dead)
+        if (!outOfRange && !reachedPlayer&& !PlayerAttack.attacking1&&!dead)
         {
             print("going for player");
             rb.velocity = Time.deltaTime * new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y).normalized * speed;

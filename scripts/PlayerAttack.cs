@@ -43,7 +43,7 @@ public class PlayerAttack : MonoBehaviour
             StartCoroutine(Attack());
             
         }
-        if (inRange && !attacking1 && !dead ) {
+        if (inRange && !attacking1 && !dead && gameObject.name != "FrostGuardian") {
             attacking1 = true;
             StartCoroutine(Attack(1));
         }
@@ -84,7 +84,7 @@ public class PlayerAttack : MonoBehaviour
             area2.SetActive(true);
 
         }
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         if (inRange)
         {
@@ -94,7 +94,7 @@ public class PlayerAttack : MonoBehaviour
             }
         }
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
 
         area1.SetActive(false);
         area2.SetActive(false);
@@ -129,12 +129,16 @@ public class PlayerAttack : MonoBehaviour
         /*if (gameObject.name.StartsWith("Frost")) {
             yield return new WaitForSeconds(1.5f);
         }*/
-        if (!gameObject.name.StartsWith("Bo"))
+        if (gameObject.name.StartsWith("Bo"))
         {
             yield return new WaitForSeconds(0.5f);
         }
+        else if (gameObject.name == "LavaDemon")
+        {
+            yield return new WaitForSeconds(1f);
+        }
         else {
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(1f);
         }
 
         
@@ -146,13 +150,16 @@ public class PlayerAttack : MonoBehaviour
                 playerHealth.RecieveDamage(attackDamage);
             }
         }
-        
+
         if (gameObject.name.StartsWith("Bo"))
+        {
+            yield return new WaitForSeconds(0.25f);
+        }
+        else if (gameObject.name == "LavaDemon")
         {
             yield return new WaitForSeconds(0.5f);
         }
-        else
-        {
+        else {
             yield return new WaitForSeconds(1f);
         }
 

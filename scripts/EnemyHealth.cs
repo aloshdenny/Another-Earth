@@ -61,7 +61,7 @@ public class EnemyHealth : MonoBehaviour
                 {
                     FrostDemonMove1.dead = true;
                 }
-                else if (gameObject.name == "FrostGuardian (1)") { 
+                else if (gameObject.name == "Boss") { 
                     BossMove.dead = true;
                 }
                 SliderObj.SetActive(false);

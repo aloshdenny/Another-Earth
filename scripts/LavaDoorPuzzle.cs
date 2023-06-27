@@ -17,7 +17,6 @@ public class LavaDoorPuzzle : MonoBehaviour
     {
         if (LavaBossDead) {
             open.SetActive(true);
-            PlayAudio.DoorPlay = true;
             gameObject.SetActive(false);
         }
     }
