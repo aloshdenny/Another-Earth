@@ -8,7 +8,7 @@ Since it was a game developed on Unity, we ran into some errors while coding the
 Techstacks:
 
 Unity <br/>
-. C# <br>
+- C# <br>
 * Pyxel Edit <br/>
 + DaVinci Resolve <br/>
 
