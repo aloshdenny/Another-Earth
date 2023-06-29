@@ -29,5 +29,3 @@ You can also download the game here: [Another Earth](https://github.com/aloshden
 ![Screenshot (553)](https://github.com/aloshdenny/Another-Earth/assets/97750960/3d6b8faa-ca97-46e3-bf54-a48ae75fddad)
 ![Screenshot (569)](https://github.com/aloshdenny/Another-Earth/assets/97750960/5c079fbd-e4cc-452f-9ef1-30cdb873d88b)
 ![Screenshot (565)](https://github.com/aloshdenny/Another-Earth/assets/97750960/1e59caaf-5961-4081-9351-d7190add14a3)
-
-<iframe src="https://itch.io/embed/2135645" width="552" height="167" frameborder="0"><a href="https://a-o-x-o.itch.io/another-earth">Another Earth by a_o_x_o</a></iframe>
